@@ -1,0 +1,50 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 1px gray;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo{
+    font-size: 22px;
+}
+
+.logo span{
+    color: blue;
+}
+
+.list-items{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    list-style: none;
+    position: relative;
+}
+
+.item::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0061ff;
+    transition: 0.4s;
+}
+
+.item:hover::after{
+    width: 100%;
+}
+
